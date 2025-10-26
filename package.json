@@ -1,7 +1,7 @@
 {
   "name": "node-my-ai-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "API de serviço para o projeto vue-mini-kanban usando GPT-5-Nano",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -23,7 +23,8 @@
     "openai",
     "whisper",
     "express",
-    "voice-to-text"
+    "voice-to-text",
+    "gpt-5-nano"
   ],
   "license": "MIT"
 }
