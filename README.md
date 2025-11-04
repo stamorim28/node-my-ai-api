@@ -1,4 +1,7 @@
 # Voice Task API (com GPT-5-Nano) 🎤→📋
+[![Node.js](https://img.shields.io/badge/Node.js-brightgreen.svg)](https://nodejs.org/docs/latest/api/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-blue.svg)](https://platform.openai.com/docs/overview)
+[![Multier](https://img.shields.io/badge/Multer-green.svg)](https://github.com/expressjs/multer)
 
 Uma API Node.js que converte comandos de voz em tarefas estruturadas usando OpenAI Whisper e GPT-5-Nano. Perfeito para integrar com aplicações de gerenciamento de tarefas como Kanban boards.
 
