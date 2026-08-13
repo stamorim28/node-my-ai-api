@@ -1,50 +1,50 @@
-# Voice Task API (com GPT-5-Nano) 🎤→📋
+# Voice Task API (with GPT-5-Nano) 🎤→📋
 [![Node.js](https://img.shields.io/badge/Node.js-brightgreen.svg)](https://nodejs.org/docs/latest/api/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-blue.svg)](https://platform.openai.com/docs/overview)
 [![Multier](https://img.shields.io/badge/Multer-green.svg)](https://github.com/expressjs/multer)
 
-Uma API Node.js que converte comandos de voz em tarefas estruturadas usando OpenAI Whisper e GPT-5-Nano. Perfeito para integrar com aplicações de gerenciamento de tarefas como Kanban boards.
+A Node.js API that converts voice commands into structured tasks using OpenAI Whisper and GPT-5-Nano. Perfect for integrating with task management applications like Kanban boards.
 
-Confira também o [vue-mini-kanban](https://github.com/stamorim28/vue-mini-kanban), repositório que está usando essa API.
+Check out [vue-mini-kanban](https://github.com/stamorim28/vue-mini-kanban), the repository using this API.
 
-## ✨ Funcionalidades
+## ✨ Features
 
-- **🎤 Captura de Áudio**: Suporte a upload de arquivos de áudio em formato WebM
-- **📝 Transcrição Automática**: Utiliza OpenAI Whisper para converter áudio em texto
-- **🤖 Processamento Inteligente**: GPT-5-Nano estrutura as tarefas com título, descrição e prioridade
-- **📊 Saída Estruturada**: Retorna JSON formatado com HTML para fácil integração frontend
-- **🔒 Segurança**: Remove informações sensíveis automaticamente
-- **🌐 CORS Habilitado**: Pronto para integração com aplicações web
+- **🎤 Audio Capture**: Supports WebM audio file uploads
+- **📝 Automatic Transcription**: Uses OpenAI Whisper to convert audio to text
+- **🤖 Smart Processing**: GPT-5-Nano structures tasks with title, description, and priority
+- **📊 Structured Output**: Returns formatted JSON with HTML for easy frontend integration
+- **🔒 Security**: Automatically removes sensitive information
+- **🌐 CORS Enabled**: Ready for web application integration
 
-## 🛠️ Tecnologias
+## 🛠️ Tech Stack
 
-- **Node.js** + **Express** - Servidor web
-- **Multer** - Middleware para upload de arquivos
-- **OpenAI API** - Whisper (transcrição) e GPT-5-Nano (processamento)
+- **Node.js** + **Express** - Web server
+- **Multer** - File upload middleware
+- **OpenAI API** - Whisper (transcription) and GPT-5-Nano (processing)
 - **CORS** - Cross-origin resource sharing
 
-## 📋 Pré-requisitos
+## 📋 Prerequisites
 
-- Node.js 18 ou superior
-- Chave da API OpenAI
-- npm ou yarn
+- Node.js 18 or higher
+- OpenAI API key
+- npm or yarn
 
 ## 📡 API Endpoints
 ### POST /api/voice-task
-Processa um arquivo de áudio e retorna uma tarefa estruturada.
+Processes an audio file and returns a structured task.
 
 - **Headers:** Content-Type: multipart/form-data
 
-- **Body:** audio: Arquivo de áudio (WebM)
+- **Body:** audio: Audio file (WebM)
 
-## ⚙️ Como Executar
+## ⚙️ How to Run
 
 ```bash
 npm install
 ```
 
 ```env
-OPENAI_API_KEY=sua_chave_openai_aqui
+OPENAI_API_KEY=your_openai_api_key_here
 PORT=3000
 ```
 
@@ -52,4 +52,4 @@ PORT=3000
 npm run dev
 ```
 
-O servidor estará rodando em http://localhost:3000
+The server will be running at http://localhost:3000
